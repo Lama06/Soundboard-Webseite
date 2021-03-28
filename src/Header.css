@@ -1,0 +1,29 @@
+:root {
+    --header-height: 70px;
+}
+
+@keyframes header-slide-in {
+    from {
+        top: calc(0px - var(--header-height));
+    }
+    to {
+        top: 0;
+    }
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: var(--header-height);
+    padding: 20px;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2081c3;
+    animation-name: header-slide-in;
+    animation-duration: 1s;
+}

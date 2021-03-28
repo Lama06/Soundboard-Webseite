@@ -1,0 +1,15 @@
+.sound-container {
+    position: fixed;
+    top: var(--header-height);
+    left: var(--sidebar-width);
+    height: calc(100% - var(--header-height));
+    width: calc(100% - var(--sidebar-width));
+    padding: 20px;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f7f9f9;
+    overflow: auto;
+}

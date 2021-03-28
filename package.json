@@ -1,0 +1,22 @@
+{
+    "name": "soundboard-website",
+    "version": "1.0.0",
+    "description": "Eine Webseite, die Soundboards anzeigen kann",
+    "scripts": {
+        "build": "webpack",
+        "watch": "webpack -w",
+        "server": "python -m http.server"
+    },
+    "author": "Lama06",
+    "license": "MIT",
+    "devDependencies": {
+        "css-loader": "^5.2.0",
+        "html-webpack-plugin": "^5.3.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "style-loader": "^2.0.0",
+        "uuid": "^8.3.2",
+        "webpack": "^5.28.0",
+        "webpack-cli": "^4.5.0"
+    }
+}

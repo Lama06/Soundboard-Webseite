@@ -1,0 +1,39 @@
+:root {
+    --sidebar-width: 10%;
+}
+
+@keyframes sidebar-slide-in {
+    from {
+        left: calc(0px - var(--sidebar-width));
+    }
+    to {
+        left: 0;
+    }
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: var(--header-height);
+    width: var(--sidebar-width);
+    height: calc(100% - var(--header-height));
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #63d2ff;
+    color: white;
+    animation-name: sidebar-slide-in;
+    animation-duration: 1s;
+    overflow: auto;
+}
+
+.sidebar .buttons {
+    margin-bottom: 10px;
+}
+
+.sidebar .buttons .button {
+    margin: 5px 0;
+}

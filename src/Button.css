@@ -1,0 +1,17 @@
+.button {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #023e8a;
+    padding: 10px 20px;
+    color: white;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button:active {
+    transform: scale(1.05);
+}

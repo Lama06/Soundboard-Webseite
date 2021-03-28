@@ -1,0 +1,34 @@
+.sound {
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 240px;
+    min-height: 120px;
+    margin: 30px;
+    max-width: 500px;
+    background-color: #016fb9;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+@keyframes sound-playing-animation {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+        background-color: #ec4e20;
+        color: black;
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.sound.playing {
+    animation-name: sound-playing-animation;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
